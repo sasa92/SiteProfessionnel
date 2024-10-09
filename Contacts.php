@@ -43,7 +43,7 @@
 
             <?php
 // Connexion à la base de données 
-$dsn = 'mysql:host=127.0.0.1;dbname=contact';
+$dsn = 'mysql:host=127.0.0.1';
 $username = "root";
 $dbname = "contact";
 
