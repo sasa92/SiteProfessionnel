@@ -43,9 +43,9 @@
 
             <?php
 // Connexion à la base de données 
-$dsn = 'mysql:host=127.0.0.1';
-$username = "root";
-$dbname = "contact";
+$dsn = 'mysql:host=127.0.0.1;dbname=contact';
+$username = 'root';
+
 
 try { 
     $conn = new PDO("mysql:host=$servname;dbname=$dbname", $username);
