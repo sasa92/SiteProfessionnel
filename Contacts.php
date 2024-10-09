@@ -45,6 +45,7 @@
 // Connexion à la base de données 
 $dsn = 'mysql:host=127.0.0.1;dbname=contact';
 $username = 'root';
+$password = ''; // Pas de mot de passe
 
 
 try { 
