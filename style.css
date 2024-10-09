@@ -1,0 +1,241 @@
+ *{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    box-sizing: border-box;
+}
+.navbar{
+    display: flex;
+    align-items: center ;
+    padding: 20px;
+}
+
+.logo img{
+    width: 200px;
+    height: auto;
+}
+
+nav{
+    flex: 1;
+    text-align: right;
+}
+
+nav ul {
+    display: inline-block;
+    list-style-type: none;
+}
+
+nav ul li {
+    display: inline-block;
+    margin-right: 20px;
+}
+
+nav ul li a{
+    text-decoration: none;
+    color: black;
+    padding: 20px;
+    display: block;
+}
+
+li a:hover{
+    background-color: #1d06ec;
+}
+
+.container{
+    max-width: 1500px;
+    margin: 25px auto;
+    padding-left: 20px;
+    padding-right: 25px;
+}
+.row {
+    display: flex;
+    align-items: center;
+    justify-content: space-around ;
+    flex-wrap: wrap;
+}
+.col-2 {
+    flex-basis: 50%;
+    min-width: 300px;
+}
+
+.col-2 img{
+    width: 100%;
+    padding: 30px 0;
+}
+
+.col-2 h1{
+    font-size: 50px;
+    line-height: 60px;
+    margin: 25px 0;
+}
+.col-2 a{
+    display: inline-block;
+    text-decoration: none;
+    padding: 10px 30px;
+    background: radial-gradient(#1d06ec,#03c6f7);
+    color:#fff;
+    border-radius: 30px;
+    margin-top: 25px;
+    transition:background 0.5s;
+}
+
+.col-2 a:hover{
+    background: #106e77;
+}
+
+p{ 
+    color: #8a8a8a;
+}
+
+body {
+    background: url('images/nuage-bleu.jpg'); /* Dégradé radial pour tout le site */
+}
+
+.header-section {
+    position: relative;
+    background: url('images/nuage-bleu.jpg'); /* Couleur de fond principale */
+    padding-top: 10px; /* Ajustez la hauteur selon vos besoins */
+    padding-bottom: 20px; /* Ajustez la hauteur selon vos besoins */
+}
+
+.header-section::before,
+.header-section::after {
+    content: '';
+    position: absolute;
+    left: 0;
+    right: 0;
+    height: 30px; /* Ajustez la hauteur selon vos besoins */
+    background: linear-gradient(to right, #ffffff, #2b06ff); /* Dégradé de couleur */
+}
+
+.header-section::before {
+    top: 0; /* Positionne la bordure supérieure */
+}
+
+.header-section::after {
+    bottom: 30; /* Positionne la bordure inférieure */
+}
+
+/* Nouvelle page Css */
+
+.container2 {
+    max-width: 1500px;
+    margin: 25px auto;
+    padding-left: 20px;
+    padding-right: 25px;
+}
+
+.Ensavoirplus {
+    display: flex;
+    align-items: flex-start;
+    justify-content: space-between;
+    flex-wrap: nowrap; /* Empêche le retour à la ligne */
+}
+
+.col-3 {
+    flex-basis: 50%;
+    min-width: 300px;
+}
+
+.col-3 img {
+    width: 100%;
+    padding: 30px 0;
+    margin-left: 800px;
+    line-height: 100px; /* La hauteur de l'image */
+}
+
+.col-3 h1 {
+    font-size: 50px;
+    line-height: 60px;
+    margin: 25px 0;
+}
+
+.p {
+    flex: 1; /* Permet au texte de prendre l'espace restant */
+}
+
+.image-Ensavoirplus{
+    display: flex;
+    justify-content: space-around;
+}
+.image-container2{
+    margin: 100px;
+}
+
+/*style de la section categorie*/
+
+.categories{
+    margin: 70px 0;
+}
+.col-3 {
+    flex-basis: 30%;
+    min-width: 250px;
+    margin : auto;
+}
+
+.col-3 img {
+    width: 50%;
+}
+
+
+p1{ 
+    color: #ff00aa;
+}
+
+
+
+
+
+
+
+form {
+    background: #ffffff; /* Blanc */
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    width: 80%;
+    max-width: 800px;
+    margin: 20px;
+}
+
+label {
+    display: block;
+    margin-bottom: 8px;
+    color: #00796b; /* Vert foncé */
+}
+
+input[type="text"],
+input[type="email"],
+textarea {
+    width: 100%;
+    padding: 10px;
+    margin-bottom: 10px;
+    border: 1px solid #b2dfdb; /* Vert clair */
+    border-radius: 4px;
+    background-color: #e0f2f1; /* Vert très clair */
+}
+
+input[type="submit"] {
+    background-color: #00796b; /* Vert foncé */
+    color: white;
+    padding: 10px 15px;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    width: 100%;
+}
+
+input[type="submit"]:hover {
+    background-color: #004d40; /* Vert encore plus foncé */ 
+}
+
+
+
+
+
+
+
+
+
+
+
