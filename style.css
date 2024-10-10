@@ -1,21 +1,21 @@
- *{
+* {
     margin: 0;
     padding: 0;
     box-sizing: border-box;
-    box-sizing: border-box;
 }
-.navbar{
+
+.navbar {
     display: flex;
-    align-items: center ;
+    align-items: center;
     padding: 20px;
 }
 
-.logo img{
+.logo img {
     width: 200px;
     height: auto;
 }
 
-nav{
+nav {
     flex: 1;
     text-align: right;
 }
@@ -30,60 +30,63 @@ nav ul li {
     margin-right: 20px;
 }
 
-nav ul li a{
+nav ul li a {
     text-decoration: none;
     color: black;
     padding: 20px;
     display: block;
 }
 
-li a:hover{
+li a:hover {
     background-color: #1d06ec;
 }
 
-.container{
+.container {
     max-width: 1500px;
     margin: 25px auto;
     padding-left: 20px;
     padding-right: 25px;
 }
+
 .row {
     display: flex;
     align-items: center;
-    justify-content: space-around ;
+    justify-content: space-around;
     flex-wrap: wrap;
 }
+
 .col-2 {
     flex-basis: 50%;
     min-width: 300px;
 }
 
-.col-2 img{
+.col-2 img {
     width: 100%;
     padding: 30px 0;
 }
 
-.col-2 h1{
+.col-2 h1 {
     font-size: 50px;
     line-height: 60px;
     margin: 25px 0;
 }
-.col-2 a{
+
+.col-2 a {
     display: inline-block;
     text-decoration: none;
     padding: 10px 30px;
-    background: radial-gradient(#1d06ec,#03c6f7);
-    color:#fff;
+    background: radial-gradient(#1d06ec, #03c6f7);
+    color: #fff;
     border-radius: 30px;
     margin-top: 25px;
-    transition:background 0.5s;
+    transition: background 0.5s;
 }
 
-.col-2 a:hover{
+.col-2 a:hover {
     background: #106e77;
 }
 
-p{ 
+p {
     color: #8a8a8a;
 }
 
@@ -117,7 +120,6 @@ body {
 }
 
 /* Nouvelle page Css */
-
 .container2 {
     max-width: 1500px;
     margin: 25px auto;
@@ -154,39 +156,33 @@ body {
     flex: 1; /* Permet au texte de prendre l'espace restant */
 }
 
-.image-Ensavoirplus{
+.image-Ensavoirplus {
     display: flex;
     justify-content: space-around;
 }
-.image-container2{
+
+.image-container2 {
     margin: 100px;
 }
 
-/*style de la section categorie*/
-
-.categories{
+/* Style de la section categorie */
+.categories {
     margin: 70px 0;
 }
+
 .col-3 {
     flex-basis: 30%;
     min-width: 250px;
-    margin : auto;
+    margin: auto;
 }
 
 .col-3 img {
     width: 50%;
 }
 
-
-p1{ 
+p1 {
     color: #ff00aa;
 }
-
-
-
-
-
-
 
 form {
     background: #ffffff; /* Blanc */
@@ -226,16 +222,66 @@ input[type="submit"] {
 }
 
 input[type="submit"]:hover {
-    background-color: #004d40; /* Vert encore plus foncé */ 
+    background-color: #004d40; /* Vert encore plus foncé */
 }
 
+/* Media queries pour rendre le site responsive */
+@media (max-width: 600px) {
+    .navbar {
+        flex-direction: column;
+        align-items: flex-start;
+    }
 
+    nav ul {
+        width: 100%;
+        text-align: left;
+    }
 
+    nav ul li {
+        display: block;
+        margin-right: 0;
+    }
 
+    .container {
+        padding-left: 10px;
+        padding-right: 10px;
+    }
 
+    .col-2 {
+        flex-basis: 100%;
+    }
 
+    .col-2 h1 {
+        font-size: 30px;
+        line-height: 40px;
+    }
 
+    .col-2 a {
+        padding: 10px 20px;
+    }
 
+    .header-section {
+        padding-top: 5px;
+        padding-bottom: 10px;
+    }
+}
 
+@media (min-width: 1200px) {
+    .container {
+        max-width: 1800px;
+    }
 
+    .col-2 h1 {
+        font-size: 60px;
+        line-height: 70px;
+    }
 
+    .col-2 a {
+        padding: 15px 40px;
+    }
+
+    .header-section {
+        padding-top: 20px;
+        padding-bottom: 30px;
+    }
+}
