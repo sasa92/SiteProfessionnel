@@ -264,6 +264,15 @@ input[type="submit"]:hover {
         padding-top: 5px;
         padding-bottom: 10px;
     }
+
+    .col-3 img {
+        margin-left: 0;
+    }
+
+    .col-3 h1 {
+        font-size: 30px;
+        line-height: 40px;
+    }
 }
 
 @media (min-width: 1200px) {
@@ -283,5 +292,14 @@ input[type="submit"]:hover {
     .header-section {
         padding-top: 20px;
         padding-bottom: 30px;
+    }
+
+    .col-3 img {
+        margin-left: 800px;
+    }
+
+    .col-3 h1 {
+        font-size: 50px;
+        line-height: 60px;
     }
 }
