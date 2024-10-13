@@ -31,17 +31,19 @@
             </header>
             <div class="row">
                 <div class="col-2">
-                    <div id="confirmation" style="display:none; font-size: 24px; color: green; text-align: center; margin-top: 20px;">
-                        Message envoyé avec succès !
-                    </div>
+                    <?php if ($messageEnvoye): ?>
+                        <div id="confirmation" style="font-size: 24px; color: green; text-align: center; margin-top: 20px;">
+                            Message envoyé avec succès !
+                        </div>
+                    <?php endif; ?>
                 </div>
-
             </div>
+        </div>
     </section>
 </body>
 </html>
 
-            <?php
+<?php
 // Connexion à la base de données 
 $dsn = 'mysql:host=127.0.0.1;dbname=contact';
 $username = 'root';
@@ -54,7 +56,6 @@ try {
 } catch (PDOException $e) {
     echo "La connexion a échoué : " . $e->getMessage();
 }
-
 
 $messageEnvoye = false;
 
@@ -73,10 +74,8 @@ if (isset($_POST["Envoyer"])) {
 
     if ($stmt->execute()) {
         $messageEnvoye = true;
-        echo "<script>document.getElementById('confirmation').style.display = 'block';</script>";
     } else {
         echo "Erreur lors de l'insertion des données.";
     }
 }
 ?>
-
