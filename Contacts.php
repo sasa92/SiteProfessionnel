@@ -47,14 +47,14 @@ $dsn = 'mysql:host=127.0.0.1;dbname=contact';
 $username = 'root';
 $password = ''; // Pas de mot de passe
 
-
 try { 
-    $conn = new PDO("mysql:host=$servname;dbname=$dbname", $username);
+    $conn = new PDO($dsn, $username, $password);
     $conn->setAttribute(PDO::ATTR_ERRMODE, PDO::ERRMODE_EXCEPTION);
     // echo "La connexion a été bien établie";
 } catch (PDOException $e) {
     echo "La connexion a échoué : " . $e->getMessage();
 }
+
 
 $messageEnvoye = false;
 
